@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     box-sizing: border-box;
     background-image: url(/assets/images/background-image.jpg);
@@ -13,6 +18,9 @@ body {
     padding: 0;
 }
 
+.bold {
+    font-weight: bold;
+}
 /* Styling for Header starts here */
 
 .navigation-top {
@@ -42,7 +50,7 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 160px;
 }
 
 .flag {
@@ -92,17 +100,34 @@ footer {
     list-style-type: none;
 }
 
-h3 {
+.footer-grid-container div h3 {
     font-size: 30px;
+    font-weight: bold;
     margin-bottom: 3vh;
 }
 
+.footer-grid-container div p {
+    margin: 2vh 0;
+}
+
+.footer-social-medias {
+    text-align: center;
+}
+
+.footer-social-medias i {
+    margin: 2vh 1vw;
+}
+
 .footer-copyright {
-    display: table-cell;
-    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    width: 99vw;
     height: 5vh;
     background-color: black;
     color: white;
-    vertical-align: middle;
     text-align: center;
+}
+
+.footer-copyright p {
+    margin-top: 1.5vh;
 }
