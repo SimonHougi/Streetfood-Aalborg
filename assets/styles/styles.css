@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* General styling for elements on all pages starts here */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(/assets/images/background-image.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for Header starts here */
+
+.navigation-top {
+    width: 99vw;
+    height: 30vh;
+    list-style-type: none;
+    position: fixed;
+}
+
+.navigation-top ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation-top li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navigation-top a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.flag {
+    width: 60px;
+}
+
+.flag-britain {
+    position: fixed;
+    top: 5%;
+    left: 90%;
+}
+
+.flag-denmark {
+    position: fixed;
+    top: 5%;
+    left: 95%;
+}
+
+/* Styling for Footer starts here */
+
+footer {
+    background-color: #4FBFD2;
+    height: 50vh;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-opening-hours {
+    grid-area: open;
+}
+
+.footer-reviews {
+    grid-area: reviews;
+}
+
+.footer-grid-container {
+    display: grid;
+    grid-template-areas: 
+    'contact open reviews';
+    padding-top: 5vh;
+    padding-left: 13vw;
+}
+
+.footer-grid-container div ul {
+    list-style-type: none;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 3vh;
+}
+
+.footer-copyright {
+    display: table-cell;
+    width: 100vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
