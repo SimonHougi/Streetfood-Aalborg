@@ -206,12 +206,14 @@ hr {
     position: fixed;
     z-index: 10;
     font-family: 'Oswald', sans-serif;
+    pointer-events: none;
 }
 
 .navigation-top ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    pointer-events: none;
 }
 
 .navigation-top li {
@@ -226,6 +228,7 @@ hr {
     font-weight: bold;
     margin-left: 2vw;
     margin-right: 2vw;
+    pointer-events: all;
 }
 
 .logo {
@@ -455,52 +458,52 @@ main {
 /* Styling for kitchens.html starts here */
 
 .background-image-kitchens-1 {
-    background-image: url(/assets/images/kitchen1);
+    background-image: url(/assets/images/kitchen1.jpg); /* Image from https://www.facebook.com/thedosaspot The Dosa Spot */
     background-size: cover;
 }
 
 .background-image-kitchens-2 {
-    background-image: url(/assets/images/kitchen2);
+    background-image: url(/assets/images/kitchen2.jpg); /* Image from https://www.facebook.com/duckit.co Duck It */
     background-size: cover;
 }
 
 .background-image-kitchens-3 {
-    background-image: url(/assets/images/kitchen3);
+    background-image: url(/assets/images/kitchen3.jpg); /* Image from https://www.facebook.com/TheFishProjectDk/ The Fish Project */
     background-size: cover;
 }
 
 .background-image-kitchens-4 {
-    background-image: url(/assets/images/kitchen4);
+    background-image: url(/assets/images/kitchen4.jpg); /* Image from https://aalborgnu.dk/nyheder/mere-mad-paa-streetfood-i-dag-aabner-et-helt-nyt-og-groent-koekken/9b7120f6-2c7e-472f-b1df-b0395d74bd08/galleri?img=pmO1uKBiAcGhNDZ5iKkBuzm9Xj0 Aalborgnu */
     background-size: cover;
 }
 
 .background-image-kitchens-5 {
-    background-image: url(/assets/images/kitchen5);
+    background-image: url(/assets/images/kitchen5.jpg); /* Image from https://www.facebook.com/mstreetfood Marrakech Street Food */
     background-size: cover;
 }
 
 .background-image-kitchens-6 {
-    background-image: url(/assets/images/kitchen6);
+    background-image: url(/assets/images/kitchen6.jpg);
     background-size: cover;
 }
 
 .background-image-kitchens-7 {
-    background-image: url(/assets/images/kitchen7);
+    background-image: url(/assets/images/kitchen7.jpg);
     background-size: cover;
 }
 
 .background-image-kitchens-8 {
-    background-image: url(/assets/images/kitchen8);
+    background-image: url(/assets/images/kitchen8.jpg);
     background-size: cover;
 }
 
 .background-image-kitchens-9 {
-    background-image: url(/assets/images/kitchen9);
+    background-image: url(/assets/images/kitchen9.jpg);
     background-size: cover;
 }
 
 .background-image-kitchens-10 {
-    background-image: url(/assets/images/kitchen10);
+    background-image: url(/assets/images/kitchen10.jpg);
     background-size: cover;
 }
 
@@ -653,4 +656,117 @@ main {
     margin-top: 2vh;
     color: black;
     text-decoration: none;
+}
+
+/* Styling for individual activities starts here */
+
+.container-individual-activities-price {
+    grid-area: price;
+}
+
+.container-individual-activities-rules {
+    grid-area: rules;
+}
+
+.container-individual-activities-selection {
+    grid-area: selection;
+}
+
+.container-individual-activities {
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    'price rules'
+    'selection selection';
+}
+
+.container-individual-activities div {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.container-individual-activities p {
+    line-height: 2.5;
+    margin-top: 8vh;
+}
+
+.container-individual-activities-price h4 {
+    margin-top: 3vh;
+    position: absolute;
+}
+
+.selection-column {
+    margin-left: 5vw;
+}
+
+.container-individual-activities-selection h4 {
+    margin: 10vh 0;
+}
+
+.board-image-1 {
+    background-image: url(/assets/images/boardgallery1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.board-image-2 {
+    background-image: url(/assets/images/boardgallery2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.board-image-3 {
+    background-image: url(/assets/images/boardgallery3.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.board-image-4 {
+    background-image: url(/assets/images/boardgallery4.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.board-image-5 {
+    background-image: url(/assets/images/boardgallery5.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.arcade-image-1 {
+    background-image: url(/assets/images/arcade1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.arcade-image-2 {
+    background-image: url(/assets/images/arcade2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.arcade-image-3 {
+    background-image: url(/assets/images/arcade3.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.arcade-image-4 {
+    background-image: url(/assets/images/arcade4.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.arcade-image-5 {
+    background-image: url(/assets/images/arcade5.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.shuffle-image-1 {
+    background-image: url(/assets/images/shuffleboard1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.shuffle-image-2 {
+    background-image: url(/assets/images/shuffleboard2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.karaoke-image-1 {
+    background-image: url(/assets/images/karaoke.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
 }
