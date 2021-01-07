@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -14,20 +15,197 @@ html {
 body {
     box-sizing: border-box;
     background-image: url(/assets/images/background-image.jpg);
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-size: 100px;
+    color: #E3D90B;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    color: #E3D90B;
+    font-family: 'Black Ops One', cursive;
+}
+
+h4 {
+   font-size: 30px; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10vw;
+}
+
+h5 a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-red-highlighted {
+    color: #C3010C;
+}
+
+.text-yellow-highlighted {
+    color: #E3D90B;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    background-color: #4FBFD2;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 4px solid #4FBFD2;
 }
 
 .bold {
     font-weight: bold;
 }
+
+.flexbox {
+    display: flex;
+}
+
+/* Styling for right navigation sidebar starts here */
+
+.nav-right-sidebar {
+    height: 55vh;
+    width: 15vw;
+    position: fixed;
+    left: 85vw;
+    top: 22vh;
+    text-align: center;
+}
+
+.nav-right-sidebar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.nav-right-sidebar a:hover {
+    color: #4FBFD2;
+}
+
+.nav-right-sidebar a:checked {
+    background-color: #4FBFD2;
+}
+
+hr {
+    width: 1vw;
+    border: 1.5px solid black;
+    background-color: black;
+    transform: rotate(90deg);
+    margin: 2vh 6.7vw;
+}
+
+/* Styling for general information and image containers on multiple pages starts here */
+
+.container-type-1, .container-type-2 {
+    height: 60vh;
+    margin-top: 10vh;
+}
+
+.container-type-1-information {
+    background-color: #D67600;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+
+.container-type-1-information h2 {
+    padding-top: 6vh;
+    margin-left: 3vw;
+}
+
+.container-type-1-information p {
+    width: 22vw;
+    line-height: 2;
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.container-type-1-information button {
+    margin-top: 4vh;
+    margin-left: 3vw;
+}
+
+.container-type-1-image {
+    border: 4px solid #E3D90B;
+    width: 36vw;
+    height: 46vh;
+    position: relative;
+    left: 39vw;
+    bottom: 42vh;
+}
+
+.container-type-2-information {
+    background-color: #D67600;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: 35.5vw;
+}
+
+.container-type-2-information h2 {
+    padding-top: 6vh;
+    margin-left: 13vw;
+}
+
+.container-type-2-information p {
+    width: 22vw;
+    line-height: 2;
+    margin-top: 2vh;
+    margin-left: 13vw;
+}
+
+.container-type-2-information button {
+    margin-top: 4vh;
+    margin-left: 13vw;
+}
+
+.container-type-2-image {
+    border: 4px solid #E3D90B;
+    width: 36vw;
+    height: 46vh;
+    position: relative;
+    left: 10vw;
+    bottom: 42vh;
+}
+
+
 /* Styling for Header starts here */
 
 .navigation-top {
     width: 99vw;
-    height: 30vh;
+    height: 20vh;
     list-style-type: none;
     position: fixed;
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
 }
 
 .navigation-top ul {
@@ -46,7 +224,8 @@ body {
     color: black;
     font-size: 25px;
     font-weight: bold;
-    margin-left: 70px;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .logo {
@@ -59,14 +238,16 @@ body {
 
 .flag-britain {
     position: fixed;
-    top: 5%;
-    left: 90%;
+    top: 5.5%;
+    left: 85%;
+    z-index: 10;
 }
 
 .flag-denmark {
     position: fixed;
-    top: 5%;
-    left: 95%;
+    top: 5.5%;
+    left: 90%;
+    z-index: 10;
 }
 
 /* Styling for Footer starts here */
@@ -74,6 +255,9 @@ body {
 footer {
     background-color: #4FBFD2;
     height: 50vh;
+    margin-top: 10vh;
+    position: relative;
+    z-index: 10;
 }
 
 .footer-contact {
@@ -93,7 +277,7 @@ footer {
     grid-template-areas: 
     'contact open reviews';
     padding-top: 5vh;
-    padding-left: 13vw;
+    padding-left: 11vw;
 }
 
 .footer-grid-container div ul {
@@ -114,6 +298,10 @@ footer {
     text-align: center;
 }
 
+.footer-social-medias a {
+    color: black;
+}
+
 .footer-social-medias i {
     margin: 2vh 1vw;
 }
@@ -130,4 +318,339 @@ footer {
 
 .footer-copyright p {
     margin-top: 1.5vh;
+}
+
+/* Styling for index.html starts here */
+
+main {
+    padding-top: 30vh;
+}
+
+.container-video {
+    height: 70vh;
+}
+
+.container-video video {
+    display: block;
+    background-color: lightblue;
+    margin: auto;
+}
+
+#headline-over-video {
+    text-align: center;
+    position: relative;
+    bottom: 35%;
+}
+
+.container-concept {
+    height: 100vh;
+    margin-bottom: 25vh;
+}
+
+.container-concept-info {
+    width: 35vw;
+    height: 50vh;
+    background-color: white;
+    border: 4px solid #D67600;
+    margin-left: 17vw;
+    margin-top: 50vh;
+    position: absolute;
+    z-index: 3;
+}
+
+.container-concept-info h2 {
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.container-concept-info p {
+    width: 25vw;
+    line-height: 2;
+    margin-top: 1vh;
+    margin-left: 3vw;
+}
+
+.image-container-concept-food {
+    width: 45vw;
+    height: 55vh;
+    border: 4px solid #E3D90B;
+    background-image: url(/assets/images/conceptfood.jpg);
+    position: absolute;
+    top: 125vh;
+    left: 27.5vw;
+    z-index: 1;
+}
+
+.image-container-concept-man {
+    width: 18vw;
+    height: 52vh;
+    border: 4px solid #D67600;
+    background-image: url(/assets/images/conceptman.jpg);
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    top: 145vh;
+    left: 64vw;
+    z-index: 1;
+}
+
+.background-image-frontpage-kitchens {
+    background-image: url(/assets/images/kitchens.jpg);
+    background-size: cover;
+}
+
+.background-image-frontpage-activities {
+    background-image: url(/assets/images/activities.jpg);
+    background-size: cover;
+}
+
+.background-image-frontpage-events {
+    background-image: url(/assets/images/events.jpg);
+    background-size: cover;
+}
+
+.container-widget-next-event {
+    height: 100vh;
+}
+
+.container-widget-next-event h2 {
+    margin-top: 25vh;
+    margin-left: 17vw;
+}
+
+.container-widget-next-event button {
+    margin-top: 40vh;
+    margin-left: 17vw;
+}
+
+.container-map {
+    height: 100vh;
+}
+
+.container-map h2 {
+    margin-left: 17vw;
+}
+
+.container-map button {
+    margin-top: 60vh;
+    margin-left: 17vw;
+}
+
+.frontpage-main .container-type-1-information {
+    margin-left: 17vw;
+}
+
+.frontpage-main .container-type-1-image {
+    left: 46vw;
+}
+
+.frontpage-main .container-type-2-information {
+    margin-left: 42.5vw;
+}
+
+.frontpage-main .container-type-2-image {
+    left: 17vw;
+}
+
+/* Styling for kitchens.html starts here */
+
+.background-image-kitchens-1 {
+    background-image: url(/assets/images/kitchen1);
+    background-size: cover;
+}
+
+.background-image-kitchens-2 {
+    background-image: url(/assets/images/kitchen2);
+    background-size: cover;
+}
+
+.background-image-kitchens-3 {
+    background-image: url(/assets/images/kitchen3);
+    background-size: cover;
+}
+
+.background-image-kitchens-4 {
+    background-image: url(/assets/images/kitchen4);
+    background-size: cover;
+}
+
+.background-image-kitchens-5 {
+    background-image: url(/assets/images/kitchen5);
+    background-size: cover;
+}
+
+.background-image-kitchens-6 {
+    background-image: url(/assets/images/kitchen6);
+    background-size: cover;
+}
+
+.background-image-kitchens-7 {
+    background-image: url(/assets/images/kitchen7);
+    background-size: cover;
+}
+
+.background-image-kitchens-8 {
+    background-image: url(/assets/images/kitchen8);
+    background-size: cover;
+}
+
+.background-image-kitchens-9 {
+    background-image: url(/assets/images/kitchen9);
+    background-size: cover;
+}
+
+.background-image-kitchens-10 {
+    background-image: url(/assets/images/kitchen10);
+    background-size: cover;
+}
+
+/* Styling for activities.html starts here */
+
+.background-image-activities-1 {
+    background-image: url(/assets/images/boardgames.jpg);
+    background-size: cover;
+}
+
+.background-image-activities-2 {
+    background-image: url(/assets/images/arcade.jpg);
+    background-size: cover;
+}
+
+.background-image-activities-3 {
+    background-image: url(/assets/images/shuffleboard.jpg);
+    background-size: cover;
+}
+
+.background-image-activities-4 {
+    background-image: url(/assets/images/karaoke.jpg);
+    background-size: cover;
+}
+
+.container-type-1 h4 {
+    margin-left: 3vw;
+    margin-top: 2vh;
+}
+
+.container-type-2 h4 {
+    margin-left: 13vw;
+    margin-top: 2vh;
+}
+
+/* Styling for all the individual kitchen pages starts here */
+
+.gallery {
+    width: 70vw;
+    height: 20vh;
+    margin: 10vh auto;
+}
+
+.gallery i {
+    margin-top: 6vh;
+}
+
+.gallery-image {
+    width: 10vw;
+    height: 15vh;
+    margin: 0 2vw;
+}
+
+.dosa-image-1 {
+    background-image: url(/assets/images/dosagallery1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.dosa-image-2 {
+    background-image: url(/assets/images/dosagallery2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.dosa-image-3 {
+    background-image: url(/assets/images/dosagallery3.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.dosa-image-4 {
+    background-image: url(/assets/images/dosagallery4.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.dosa-image-5 {
+    background-image: url(/assets/images/dosagallery5.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-size: cover;
+}
+
+.container-individual-kitchen-menu {
+    grid-area: menu;
+}
+
+.container-individual-kitchen-allergies {
+    grid-area: allergies;
+}
+
+.container-individual-kitchen-childfriendly {
+    grid-area: childfriendly;
+}
+
+.container-individual-kitchen {
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    'menu allergies'
+    'menu childfriendly';
+}
+
+.container-individual-kitchen div {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.container-individual-kitchen p {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 3;
+}
+
+.container-individual-kitchen section p {
+    font-size: 16px;
+    margin: 2vh 1vw;
+}
+
+.container-individual-kitchen section i {
+    margin: 3.7vh 0;
+}
+
+.allergies-right {
+    padding-left: 4vw;
+}
+
+.container-individual-kitchen-infobox {
+    margin: 15vh auto;
+    width: 60vw;
+    height: 40vh;
+    background-color: #D67600;
+}
+
+.container-individual-kitchen-infobox p {
+    width: 50vw;
+    padding-top: 7vh;
+    margin: auto;
+    line-height: 2.5;
+}
+
+.container-individual-kitchen-infobox .fa-facebook {
+    margin-left: 5vw;
+    margin-top: 2vh;
+    color: black;
+    text-decoration: none;
+}
+
+.container-individual-kitchen-infobox .fa-instagram {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    color: black;
+    text-decoration: none;
 }

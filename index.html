@@ -5,10 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
+    <title>Aalborg Streetfood Køkkenfabrikken</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
     <script src="/assets/scripts/scripts.js" defer></script>
-    <script src="https://kit.fontawesome.com/2f6e4a59d9.js" crossorigin="anonymous"></script> <!--Font awesome icons-->
+    <script src="https://kit.fontawesome.com/2f6e4a59d9.js" crossorigin="anonymous"></script>
+    <!--Font awesome icons-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+
+
 </head>
 
 <body>
@@ -16,36 +22,33 @@
     <header>
         <div class="navigation-top">
             <ul>
-                <li><a href="">KØKKENER</a></li>
-                <li><a href="">AKTIVITETER</a></li>
+                <li><a href="kitchens.html">KØKKENER</a></li>
+                <li><a href="activities.html">AKTIVITETER</a></li>
                 <li><a href="index.html"><img src="./assets/images/logosmall.png"
                             alt="Aalborg Streetfood Køkkenfabrikken logo" class="logo"></a></li>
-                <li><a href="">BEGIVENHEDER</a></li>
-                <li><a href="">OM OS</a></li>
+                <li><a href="events.html">BEGIVENHEDER</a></li>
+                <li><a href="aboutus.html">OM OS</a></li>
             </ul>
-            <div class="navigation-flags">
+            <div>
                 <a href="index.html"><img src="./assets/images/united-kingdom.png" alt="Det Britiske flag"
                         class="flag flag-britain"></a>
                 <a href="index.html"><img src="./assets/images/denmark.png" alt="Det Danske flag"
                         class="flag flag-denmark"></a>
             </div>
         </div>
-        <div class="navigation-top-flags">
-
-        </div>
     </header>
 
-    <main>
+    <main class="frontpage-main">
 
         <div class="container-video">
-            <video width="1420" autoplay>
+            <video width="1300" autoplay>
                 <source src="" type="">
             </video>
             <h1 class="headline-site" id="headline-over-video">AALBORG STREETFOOD <br> KØKKENFABRIKKEN</h1>
         </div>
 
         <div class="container-concept">
-            <article>
+            <article class="container-concept-info">
                 <h2 class="headline-section">KONCEPT</h2>
                 <p>Aalborg Streetfood Køkkenfabrikken er mere end bare mad. Det er et samlingssted, hvor der er plads
                     til alle. En gammel lagerbygning helt nede ved Aalborgs havnefront. Vi er 18 køkkener med
@@ -54,8 +57,8 @@
                     så kom til et af vores mange arrangementer og oplev samtidig den helt magiske stemning der altid er
                     på Aalborg Streetfood.</p>
             </article>
-            <img src="" alt="Mad ved Aalborg Streetfood Køkkenfabrikken">
-            <img src="" alt="Bartender hos Aalborg Streetfood Køkkenfabrikken">
+            <div class="image-container-concept-food"></div>
+            <div class="image-container-concept-man"></div>
         </div>
 
         <div class="container-type-1">
@@ -64,23 +67,21 @@
                 <p>Der er i alt 18 køkkener, som alle leverer noget af det bedste mad indenfor deres område. Der er mad
                     fra alle verdenshjørner, så vi har noget for enhver smag. Gå på opdagelse i vores køkkener og bliv
                     fristet til dit næste måltid på Aalborg Streetfood Køkkenfabrikken.</p>
-                <button>SE KØKKENER</button>
+                <a href="kitchens.html"><button>SE KØKKENER</button></a>
             </div>
-            <div class="container-type-1-image">
-                <img src="" alt="">
+            <div class="container-type-1-image background-image-frontpage-kitchens">
             </div>
         </div>
 
         <div class="container-type-2">
-            <div class="container-type-2-image">
-                <img src="" alt="">
-            </div>
             <div class="container-type-2-information">
                 <h2 class="headline-section">AKTIVITETER</h2>
                 <p>Hos os kan i spille et hav af forskellige brætspil, som i blot tager med hen til bordet. Vi har
                     herudover en stor arkadehal, som med sikkerhed tager jer tilbage til barndommen. Kom også ned og
                     prøv vores nyeste tiltag, shuffleboard og karaoke, hvor der er garanti for en god aften.</p>
-                <button>SE AKTIVITETER</button>
+                <a href="activities.html"><button>SE AKTIVITETER</button></a>
+            </div>
+            <div class="container-type-2-image background-image-frontpage-activities">
             </div>
         </div>
 
@@ -90,10 +91,9 @@
                 <p>Hver uge afholder vi Aalborgs sjoveste begivenheder, og vi lover, at der noget for alle. Her finder
                     du blandt andet søndagsbingo med fede præmier, open mig nights , stand up og koncerter. Kombiner dit
                     besøg med mad fra et vores køkkener og du er sikret en god aften!</p>
-                <button></button>
+                <a href="events.html"><button>SE BEGIVENHEDER</button></a>
             </div>
-            <div class="container-type-1-image">
-                <img src="" alt="">
+            <div class="container-type-1-image background-image-frontpage-events">
             </div>
         </div>
 
@@ -104,6 +104,7 @@
         </div>
 
         <div class="container-map">
+            <h2>FIND RUNDT PÅ AALBORG STREETFOOD <br> KØKKENFABRIKKEN</h2>
             <img src="" alt="">
             <button>DOWNLOAD KORT</button>
         </div>
@@ -153,8 +154,8 @@
             </div>
         </div>
         <div class="footer-social-medias">
-            <i class="fab fa-facebook fa-4x"></i>
-            <i class="fab fa-instagram fa-4x"></i>
+            <a href="https://www.facebook.com/aalborgstreetfoodmarkedmarket" target="blank"><i class="fab fa-facebook fa-4x"></i></a>
+            <a href="https://www.instagram.com/aalborgstreetfood/?hl=da" target="blank"><i class="fab fa-instagram fa-4x"></i></a>
         </div>
         <div class="footer-copyright">
             <p>2020 <i class="far fa-copyright"></i> Copyright. Aalborg Street Food Køkkenfabrikken</p>
