@@ -34,8 +34,8 @@ h2 {
 }
 
 h4 {
-   font-size: 30px; 
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h5 {
@@ -84,6 +84,10 @@ button:hover {
 
 .flexbox {
     display: flex;
+}
+
+.fa-envelope {
+    color: black;
 }
 
 /* Styling for right navigation sidebar starts here */
@@ -196,7 +200,6 @@ hr {
     bottom: 42vh;
 }
 
-
 /* Styling for Header starts here */
 
 .navigation-top {
@@ -277,8 +280,7 @@ footer {
 
 .footer-grid-container {
     display: grid;
-    grid-template-areas: 
-    'contact open reviews';
+    grid-template-areas: 'contact open reviews';
     padding-top: 5vh;
     padding-left: 11vw;
 }
@@ -347,7 +349,79 @@ main {
 
 .container-concept {
     height: 100vh;
-    margin-bottom: 25vh;
+}
+
+.speech-bubble-1 {
+    width: 18vw;
+    background-color: #D67600;
+    border-radius: 40px;
+    position: relative;
+    left: 20vw;
+    top: 13vh;
+    z-index: 3;
+}
+
+.speech-bubble-1 p {
+    padding: 2vh 0 2vh 2vw;
+    width: 14vw;
+    line-height: 1.5;
+}
+
+.speech-bubble-1:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top-color: #D67600;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: 10px;
+	margin-bottom: -60px;
+}
+
+.speech-bubble-2 {
+    width: 20vw;
+    background-color: white;
+    border-radius: 40px;
+    position: relative;
+    left: 62vw;
+    top: 13vh;
+    z-index: 3;
+}
+
+.speech-bubble-2 p {
+    padding: 2vh 0 2vh 2vw;
+    width: 14vw;
+    line-height: 1.5;    
+}
+
+.speech-bubble-2:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -140px;
+	margin-bottom: -60px;
+}
+
+.speech-bubble-2 button {
+    position: relative;
+    z-index: 10;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+}
+
+.speech-bubble-2 button:hover {
+    color: black;
 }
 
 .container-concept-info {
@@ -356,7 +430,7 @@ main {
     background-color: white;
     border: 4px solid #D67600;
     margin-left: 17vw;
-    margin-top: 50vh;
+    margin-top: 35vh;
     position: absolute;
     z-index: 3;
 }
@@ -412,31 +486,28 @@ main {
     background-size: cover;
 }
 
-.container-widget-next-event {
-    height: 100vh;
-}
-
 .container-widget-next-event h2 {
-    margin-top: 25vh;
     margin-left: 17vw;
 }
 
 .container-widget-next-event button {
     margin-top: 40vh;
     margin-left: 17vw;
-}
-
-.container-map {
-    height: 100vh;
+    margin-bottom: 20vh;
 }
 
 .container-map h2 {
     margin-left: 17vw;
 }
 
+.container-map img {
+    display: block;
+    margin: 5vh auto;
+}
+
 .container-map button {
-    margin-top: 60vh;
     margin-left: 17vw;
+    margin-bottom: 5vh;
 }
 
 .frontpage-main .container-type-1-information {
@@ -458,27 +529,32 @@ main {
 /* Styling for kitchens.html starts here */
 
 .background-image-kitchens-1 {
-    background-image: url(/assets/images/kitchen1.jpg); /* Image from https://www.facebook.com/thedosaspot The Dosa Spot */
+    background-image: url(/assets/images/kitchen1.jpg);
+    /* Image from https://www.facebook.com/thedosaspot The Dosa Spot */
     background-size: cover;
 }
 
 .background-image-kitchens-2 {
-    background-image: url(/assets/images/kitchen2.jpg); /* Image from https://www.facebook.com/duckit.co Duck It */
+    background-image: url(/assets/images/kitchen2.jpg);
+    /* Image from https://www.facebook.com/duckit.co Duck It */
     background-size: cover;
 }
 
 .background-image-kitchens-3 {
-    background-image: url(/assets/images/kitchen3.jpg); /* Image from https://www.facebook.com/TheFishProjectDk/ The Fish Project */
+    background-image: url(/assets/images/kitchen3.jpg);
+    /* Image from https://www.facebook.com/TheFishProjectDk/ The Fish Project */
     background-size: cover;
 }
 
 .background-image-kitchens-4 {
-    background-image: url(/assets/images/kitchen4.jpg); /* Image from https://aalborgnu.dk/nyheder/mere-mad-paa-streetfood-i-dag-aabner-et-helt-nyt-og-groent-koekken/9b7120f6-2c7e-472f-b1df-b0395d74bd08/galleri?img=pmO1uKBiAcGhNDZ5iKkBuzm9Xj0 Aalborgnu */
+    background-image: url(/assets/images/kitchen4.jpg);
+    /* Image from https://aalborgnu.dk/nyheder/mere-mad-paa-streetfood-i-dag-aabner-et-helt-nyt-og-groent-koekken/9b7120f6-2c7e-472f-b1df-b0395d74bd08/galleri?img=pmO1uKBiAcGhNDZ5iKkBuzm9Xj0 Aalborgnu */
     background-size: cover;
 }
 
 .background-image-kitchens-5 {
-    background-image: url(/assets/images/kitchen5.jpg); /* Image from https://www.facebook.com/mstreetfood Marrakech Street Food */
+    background-image: url(/assets/images/kitchen5.jpg);
+    /* Image from https://www.facebook.com/mstreetfood Marrakech Street Food */
     background-size: cover;
 }
 
@@ -558,27 +634,32 @@ main {
 }
 
 .dosa-image-1 {
-    background-image: url(/assets/images/dosagallery1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/dosagallery1.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .dosa-image-2 {
-    background-image: url(/assets/images/dosagallery2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/dosagallery2.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .dosa-image-3 {
-    background-image: url(/assets/images/dosagallery3.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/dosagallery3.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .dosa-image-4 {
-    background-image: url(/assets/images/dosagallery4.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/dosagallery4.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .dosa-image-5 {
-    background-image: url(/assets/images/dosagallery5.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/dosagallery5.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
@@ -599,9 +680,7 @@ main {
     margin: auto;
     background-color: white;
     display: grid;
-    grid-template-areas: 
-    'menu allergies'
-    'menu childfriendly';
+    grid-template-areas: 'menu allergies' 'menu childfriendly';
 }
 
 .container-individual-kitchen div {
@@ -677,9 +756,7 @@ main {
     margin: auto;
     background-color: white;
     display: grid;
-    grid-template-areas: 
-    'price rules'
-    'selection selection';
+    grid-template-areas: 'price rules' 'selection selection';
 }
 
 .container-individual-activities div {
@@ -707,66 +784,350 @@ main {
 }
 
 .board-image-1 {
-    background-image: url(/assets/images/boardgallery1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/boardgallery1.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .board-image-2 {
-    background-image: url(/assets/images/boardgallery2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/boardgallery2.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .board-image-3 {
-    background-image: url(/assets/images/boardgallery3.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/boardgallery3.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .board-image-4 {
-    background-image: url(/assets/images/boardgallery4.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/boardgallery4.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .board-image-5 {
-    background-image: url(/assets/images/boardgallery5.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/boardgallery5.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .arcade-image-1 {
-    background-image: url(/assets/images/arcade1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/arcade1.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .arcade-image-2 {
-    background-image: url(/assets/images/arcade2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/arcade2.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .arcade-image-3 {
-    background-image: url(/assets/images/arcade3.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/arcade3.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .arcade-image-4 {
-    background-image: url(/assets/images/arcade4.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/arcade4.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .arcade-image-5 {
-    background-image: url(/assets/images/arcade5.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/arcade5.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .shuffle-image-1 {
-    background-image: url(/assets/images/shuffleboard1.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/shuffleboard1.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .shuffle-image-2 {
-    background-image: url(/assets/images/shuffleboard2.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/shuffleboard2.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
 }
 
 .karaoke-image-1 {
-    background-image: url(/assets/images/karaoke.jpg); /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
+    background-image: url(/assets/images/karaoke.jpg);
+    /* Image from https://www.facebook.com/thedosaspot/photos The Dosa Spot */
     background-size: cover;
+}
+
+/* Styling for events.html starts here */
+
+.event-main h2 {
+    padding-left: 10vw;
+    margin-top: 5vh;
+}
+
+.event-main button {
+    margin-left: 10vw;
+}
+
+.event-personal-information {
+    width: 45vw;
+    height: 42vh;
+    background-color: white;
+    margin-left: 10vw;
+}
+
+.event-personal-information h2 {
+    padding-top: 4vh;
+    padding-left: 3vw;
+}
+
+.event-personal-information p {
+    width: 24vw;
+    padding-top: 2vh;
+    padding-left: 3vw;
+    line-height: 2;
+}
+
+.event-personal-information button {
+    margin-top: 2vh;
+    margin-left: 3vw;
+}
+
+.event-personal-image {
+    border: 4px solid #E3D90B;
+    width: 37vw;
+    height: 45vh;
+    position: relative;
+    left: 42vw;
+    bottom: 32vh;
+    background-image: url(/assets/images/ownevent.jpg);
+    background-size: cover;
+}
+
+.container-event-personal {
+    height: 60vh;
+}
+
+.speech-bubble-2 {
+    width: 20vw;
+    background-color: #D67600;
+    border-radius: 40px;
+    position: relative;
+    left: 55vw;
+    top: 10vh;
+    z-index: 3;
+}
+
+.speech-bubble-2 p {
+    padding: 2vh 0 2vh 2vw;
+    width: 14vw;
+    line-height: 1.5;    
+}
+
+.speech-bubble-2:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top-color: #D67600;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: 40px;
+	margin-bottom: -60px;
+}
+
+.speech-bubble-2 button {
+    position: relative;
+    z-index: 10;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+}
+
+.speech-bubble-2 button:hover {
+    color: black;
+}
+
+/* Styling for aboutus.html starts here */
+
+.container-find-us {
+    height: 100vh;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 50vh;
+    width: 38vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    z-index: 3;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 50vh;
+    width: 38vw;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.find-us-info {
+    background-color: white;
+    width: 35vw;
+    position: relative;
+    left: 45vw;
+    bottom: 45vh;
+    padding-bottom: 10vh;
+}
+
+.find-us-info h2 {
+    padding-top: 5vh;
+    padding-left: 7vw;
+}
+
+.find-us-info p {
+    padding-top: 3vh;
+    padding-left: 7vw;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.speech-bubble-about-1 {
+    width: 20vw;
+    background-color: #D67600;
+    position: relative;
+    border-radius: 40px;
+    left: 13vw;
+    bottom: 68vh;
+    z-index: 3;
+}
+
+.speech-bubble-about-1 p {
+    padding: 2vh 0 2vh 2vw;
+    width: 14vw;
+    line-height: 1.5;    
+}
+
+.speech-bubble-about-1:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top-color: #D67600;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -140px;
+	margin-bottom: -60px;
+}
+
+.speech-bubble-about-1 button {
+    position: relative;
+    z-index: 10;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+}
+
+.speech-bubble-about-1 button:hover {
+    color: white;
+}
+
+.speech-bubble-about-2 {
+    width: 20vw;
+    background-color: white;
+    border-radius: 40px;
+    position: relative;
+    left: 30vw;
+    bottom: 80vh;
+    z-index: 3;
+}
+
+.speech-bubble-about-2 p {
+    padding: 2vh 0 2vh 2vw;
+    width: 14vw;
+    line-height: 1.5;    
+}
+
+.speech-bubble-about-2:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: 30px;
+	margin-bottom: -60px;
+}
+
+.speech-bubble-about-2 button {
+    position: relative;
+    z-index: 10;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+}
+
+.speech-bubble-about-2 button:hover {
+    color: white;
+}
+
+.container-about-mvh {
+    background-color: #D67600;
+    width: 70vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.about-mvh {
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+}
+
+.about-mvh p {
+    padding-top: 5vh;
+    width: 28vw;
+    line-height: 2.5;
+}
+
+.container-about-team {
+    margin: 15vh 0 10vh 10vw;
+}
+
+.about-team-staff-info {
+    margin: 5vh 0 10vh 0;
+}
+
+.move-left {
+    margin-left: 12.33vw;
+}
+
+.about-team-staff-info img {
+    width: 15vw;
+    margin: 5vh 0 2vh 0;
+}
+
+.about-team-staff-info h3 {
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-team-staff-info p {
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
