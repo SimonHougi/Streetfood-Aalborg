@@ -1,6 +1,6 @@
 // Denne funktion er til at få burgermenuen til at virke og vise navigationspunkterne
 function burgerMenu() {
-  var x = document.getElementById("mobile-links");
+  let x = document.getElementById("mobile-links");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
