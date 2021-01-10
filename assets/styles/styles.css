@@ -90,6 +90,16 @@ button:hover {
     color: black;
 }
 
+/* Styling for Google API Map starts here */
+
+#map {
+    height: 50vh;
+    width: 38vw;
+    margin-left: 11vw;
+    margin-top: 10vh;
+    z-index: 1;
+}
+
 /* Styling for right navigation sidebar starts here */
 
 .nav-right-sidebar {
@@ -494,20 +504,6 @@ main {
     margin-top: 40vh;
     margin-left: 17vw;
     margin-bottom: 20vh;
-}
-
-.container-map h2 {
-    margin-left: 17vw;
-}
-
-.container-map img {
-    display: block;
-    margin: 5vh auto;
-}
-
-.container-map button {
-    margin-left: 17vw;
-    margin-bottom: 5vh;
 }
 
 .frontpage-main .container-type-1-information {
@@ -1420,8 +1416,6 @@ iframe {
         font-size: 24px;
     }
 
-    
-
     /* Styling for events.html mobile version starts here */
 
     .speech-bubble-1,.speech-bubble-2 {
@@ -1441,7 +1435,7 @@ iframe {
         display: none;
     }
 
-    /* Styling for events.html mobile version starts here */
+    /* Styling for aboutus.html mobile version starts here */
 
     .speech-bubble-about-1,.speech-bubble-about-2 {
         display: none;
@@ -1452,16 +1446,14 @@ iframe {
         margin: auto;
         width: 94vw;
         height: unset;
+        padding-top: 2vh;
     }
 
-    .mapouter {
-        display: unset;
-    }
-
-    .gmap_canvas {
-        width: 90vw;
+    #map {
         height: 20vh;
-        margin: auto;
+        width: 88vw;
+        margin: 0;
+        margin-left: 3vw;
     }
 
     .find-us-info {
@@ -1531,6 +1523,9 @@ iframe {
     }
 }
 
+
+/* Styling for SVG animation starts here */
+
 svg {
     width: 8vw;
 }
@@ -1552,7 +1547,7 @@ svg {
 }
 
 #Aalborg {
-    animation: Aalborg 1.4s ease-in-out infinite alternate;
+    animation: Aalborg 1.2s ease-in-out infinite alternate;
 }
 
 @keyframes Aalborg {
@@ -1566,16 +1561,16 @@ svg {
 }
 
 #Streetfood {
-    animation: Streetfood 1.2s ease-in-out infinite alternate;
+    animation: Streetfood 1s ease-in-out infinite alternate;
 }
 
 @keyframes Streetfood {
     from {
-        transform: rotateX(-15deg);
+        transform: rotateX(-20deg);
     }
 
     to {
-        transform: rotateX(20deg);
+        transform: rotateX(10deg);
     }
 }
 
@@ -1592,4 +1587,3 @@ svg {
         transform: translateX(0.5%);
     }
 }
-

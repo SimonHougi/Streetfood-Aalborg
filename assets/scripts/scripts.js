@@ -67,3 +67,19 @@ function showBoardgames() {
     x.style.display = "none";
   }
 }
+
+// Denne funktion får Google Maps API til at virke 
+
+function initMap() {
+  let location = {lat: 57.057130, lng: 9.897390};
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 18,
+    center: location
+  });
+
+  let marker = new google.maps.Marker ({
+    position: location,
+    map: map
+  });
+}
+
