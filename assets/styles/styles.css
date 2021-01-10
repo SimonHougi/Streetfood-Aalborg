@@ -369,17 +369,17 @@ main {
 
 .speech-bubble-1:after {
     content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: #D67600;
-	border-bottom: 0;
-	border-right: 0;
-	margin-left: 10px;
-	margin-bottom: -60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: #D67600;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: 10px;
+    margin-bottom: -60px;
 }
 
 .speech-bubble-2 {
@@ -395,22 +395,22 @@ main {
 .speech-bubble-2 p {
     padding: 2vh 0 2vh 2vw;
     width: 14vw;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 .speech-bubble-2:after {
     content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: white;
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -140px;
-	margin-bottom: -60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -140px;
+    margin-bottom: -60px;
 }
 
 .speech-bubble-2 button {
@@ -924,22 +924,22 @@ main {
 .speech-bubble-2 p {
     padding: 2vh 0 2vh 2vw;
     width: 14vw;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 .speech-bubble-2:after {
     content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: #D67600;
-	border-bottom: 0;
-	border-right: 0;
-	margin-left: 40px;
-	margin-bottom: -60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: #D67600;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: 40px;
+    margin-bottom: -60px;
 }
 
 .speech-bubble-2 button {
@@ -1015,22 +1015,22 @@ iframe {
 .speech-bubble-about-1 p {
     padding: 2vh 0 2vh 2vw;
     width: 14vw;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 .speech-bubble-about-1:after {
     content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: #D67600;
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -140px;
-	margin-bottom: -60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: #D67600;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -140px;
+    margin-bottom: -60px;
 }
 
 .speech-bubble-about-1 button {
@@ -1057,22 +1057,22 @@ iframe {
 .speech-bubble-about-2 p {
     padding: 2vh 0 2vh 2vw;
     width: 14vw;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 .speech-bubble-about-2:after {
     content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: white;
-	border-bottom: 0;
-	border-right: 0;
-	margin-left: 30px;
-	margin-bottom: -60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: 30px;
+    margin-bottom: -60px;
 }
 
 .speech-bubble-about-2 button {
@@ -1130,4 +1130,403 @@ iframe {
 .about-team-staff-info p {
     font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling for the elements that doesn't appear on desktop version, but the mobile version */
+
+.mobile-navigation-top {
+    display: none;
+}
+
+.mobile-version-main {
+    display: none;
+}
+
+.mobile-version-image-button {
+    display: none;
+}
+
+.mobile-version-kitchen {
+    display: none;
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    /* Styling for burger menu navigation starts here */
+    .navigation-top {
+        display: none;
+    }
+    header {
+        background-color: white;
+    }
+    .mobile-navigation-top {
+        overflow: hidden;
+        position: relative;
+        display: unset;
+    }
+    #mobile-links {
+        margin-top: 30px;
+    }
+    #mobile-links a {
+        color: #E3D90B;
+        padding: 10px 30px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Black Ops One', cursive;
+        font-size: 30px;
+    }
+    .mobile-burgermenu {
+        color: black;
+        margin-left: 20px;
+        position: relative;
+        bottom: 15px;
+    }
+    .logo {
+        width: 60px;
+        margin-left: 120px;
+        position: relative;
+        top: 30px;
+    }
+    .flag-denmark {
+        position: unset;
+        width: 30px;
+        margin-left: 120px;
+        position: relative;
+        bottom: 15px;
+        top: unset;
+        left: unset;
+    }
+    .mobile-navigation-top #mobile-links {
+        display: none;
+    }
+    /* Styling for mobile version footer starts here */
+    footer {
+        height: unset;
+    }
+    .footer-grid-container {
+        grid-template-areas: 'open' 'contact' 'reviews';
+        padding: 0;
+    }
+    .footer-grid-container h3 {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .footer-opening-hours ul {
+        margin-left: 80px;
+    }
+    .footer-contact ul {
+        margin-left: 30px;
+    }
+    .footer-social-medias i {
+        margin-bottom: 100px;
+    }
+    .footer-copyright {
+        width: 100vw;
+    }
+    .footer-copyright p {
+        font-size: 10px;
+    }
+    /* Styling for index.html mobile version starts here */
+
+    button:hover {
+        background-color: #4FBFD2;
+    }
+
+    h1 {
+        margin-top: 30px;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    main {
+        padding: 0;
+    }
+    .frontpage-main {
+        display: none;
+    }
+    #headline-over-video {
+        margin-top: 40px;
+        font-size: 32px;
+    }
+    video {
+        width: 100vw;
+        position: relative;
+        top: 20vh;
+    }
+    .mobile-version-main {
+        display: unset;
+    }
+    .front-mobile-buttons button {
+        width: 80vw;
+        height: 60px;
+        margin-left: 10vw;
+        margin-bottom: 20px;
+    }
+    .mobile-version-concept {
+        width: 94vw;
+        background-color: white;
+        margin: auto;
+        border: 6px solid #D67600;
+    }
+    .mobile-version-concept img {
+        width: 80vw;
+        display: block;
+        margin: 3vh auto;
+    }
+    .mobile-version-concept button {
+        width: unset;
+        height: unset;
+        padding: 10px 10px;
+        position: relative;
+        bottom: 160px;
+        left: 110px;
+    }
+
+    .mobile-version-concept div {
+        margin-left: 10px;
+    }
+    #show-concept-div {
+        display: none;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    .mobile-version-orange-container {
+        width: 94vw;
+        background-color: #D67600;
+        margin: 20px auto;
+    }
+    .mobile-version-orange-container h2 {
+        font-size: 26px;
+        padding: 20px 0 0 20px;
+    }
+    .mobile-version-orange-container p {
+        line-height: 2;
+        margin: 20px 0;
+        padding: 10px 0 0 20px;
+    }
+    .mobile-version-orange-container button {
+        width: unset;
+        height: unset;
+        padding: 10px 10px;
+        margin: 0 0 20px 20px;
+    }
+    .mobile-version-map {
+        margin: auto;
+        width: 94vw;
+        height: 40vh;
+        border: 6px solid #D67600;
+        background-image: url(/assets/images/Kort.png);
+        background-size: cover;
+    }
+    /* Styling for kitchens.html and activities.html mobile version starts here */
+    .nav-right-sidebar {
+        display: none;
+    }
+    .container-type-1, .container-type-2 {
+        height: unset;
+        margin-top: 5vh;
+    }
+
+    .container-type-1 a {
+        text-decoration: none;
+    }
+
+    .container-type-2 a {
+        text-decoration: none;
+    }
+
+    .container-type-1-information, .container-type-2-information {
+        display: none;
+    }
+    .container-type-1-image, .container-type-2-image {
+        position: unset;
+        width: 94vw;
+        height: 150px;
+        margin: auto;
+    }
+    .mobile-version-image-button {
+        display: unset;
+        width: 160px;
+        height: 50px;
+        position: relative;
+        bottom: 100px;
+        left: 120px;
+    }
+
+    .mobile-version-kitchen {
+        display: unset;
+    }
+
+    .mobile-version-individual-kitchens {
+        width: 94vw;
+        background-color: white;
+        line-height: 2;
+        margin: auto;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+    .mobile-version-individual-kitchens a {
+        color: black;
+    }
+
+    .mobile-social-media-icons {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .mobile-version-individual-kitchens p {
+        margin-left: 20px;
+        padding-top: 10px;
+        width: 86vw;
+    }
+
+    .mobile-version-individual-kitchens h2 {
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+
+    .mobile-version-allergies {
+        width: 90vw;
+        background-color: #D67600;
+        margin: 20px auto 0 auto;
+    }
+
+    .mobile-version-allergies-box {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .mobile-version-allergies-box p {
+        width: unset;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-version-allergies-box i {
+        position: relative;
+        right: 5px;
+        top: 5px;
+    }
+
+    .mobile-version-kitchen h3 {
+        font-size: 26px;
+        color: #E3D90B;
+        font-family: 'Black Ops One', cursive;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .mobile-version-kitchen h4 {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+
+    
+
+    /* Styling for events.html mobile version starts here */
+
+    .speech-bubble-1,.speech-bubble-2 {
+        display: none;
+    }
+
+    .event-main h2 {
+        font-size: 24px;
+    }
+
+    .event-main button {
+        width: 160px;
+        height: 50px;
+    }
+
+    .container-event-personal {
+        display: none;
+    }
+
+    /* Styling for events.html mobile version starts here */
+
+    .speech-bubble-about-1,.speech-bubble-about-2 {
+        display: none;
+    }
+
+    .container-find-us {
+        background-color: white;
+        margin: auto;
+        width: 94vw;
+        height: unset;
+    }
+
+    .mapouter {
+        display: unset;
+    }
+
+    .gmap_canvas {
+        width: 90vw;
+        height: 20vh;
+        margin: auto;
+    }
+
+    .find-us-info {
+        position: unset;
+        width: unset;
+    }
+
+    .find-us-info p {
+        font-size: 14px;
+    }
+
+    .container-about-mvh {
+        display: none;
+    }
+
+    .container-about-team {
+        display: none;
+    }
+
+    .big-button {
+        width: 80vw;
+        height: 60px;
+        margin-left: 10vw;
+        margin-bottom: 20px;
+        margin-top: 5vh;
+    }
+
+    .mobile-version-mission-vision {
+        width: 94vw;
+        background-color: #D67600;
+        margin: auto;
+    }
+
+    .mobile-version-mission-vision h2 {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+
+    .mobile-version-mission-vision p {
+        margin-left: 10px;
+    }
+
+    #show-about-mission-vision,#show-about-staff,#show-about-history {
+        display: none;
+        line-height: 2;
+    }
+
+    .mobile-version-show-staff {
+        background-color: white;
+        width: 94vw;
+        margin: auto;
+    }
+
+    .mobile-version-show-staff h2 {
+        margin-left: 10px;
+    }
+
+    .mobile-version-show-staff img {
+        display: block;
+        margin: auto;
+        width: 40vw;
+        margin-top: 50px;
+    }
+
+    .mobile-version-show-staff p {
+        text-align: center;
+    }
 }

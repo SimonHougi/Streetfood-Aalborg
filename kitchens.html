@@ -36,6 +36,21 @@
                         class="flag flag-denmark"></a>
             </div>
         </nav>
+        <div class="mobile-navigation-top">
+            <a href="javascript:void(0);" class="mobile-burgermenu" onclick="burgerMenu()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <a href="index.html"><img src="./assets/images/logosmall.png" alt="Aalborg Streetfood Køkkenfabrikken logo"
+                    class="logo"></a>
+            <a href="index.html"><img src="./assets/images/denmark.png" alt="Det Danske flag"
+                    class="flag flag-denmark"></a>
+            <div id="mobile-links">
+                <a href="kitchens.html">KØKKENER</a>
+                <a href="activities.html">AKTIVITETER</a>
+                <a href="events.html">BEGIVENHEDER</a>
+                <a href="aboutus.html">OM OS</a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -67,104 +82,184 @@
         <div id="dosa-spot" class="container-type-1">
             <div class="container-type-1-information">
                 <h2 class="headline-section">THE DOSA SPOT</h2>
-                <p>The Dosa Spot er mad fra det Sri Lankanske køkken lavet efter autentiske opskrifter og tilpasset til din smag. Se menukortet samt info om allegerne og find din favorit!</p>
+                <p>The Dosa Spot er mad fra det Sri Lankanske køkken lavet efter autentiske opskrifter og tilpasset til
+                    din smag. Se menukortet samt info om allegerne og find din favorit!</p>
                 <a href="/kitchens/dosa.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-1-image background-image-kitchens-1">
             </div>
+            
+            <div class="mobile-version-kitchen">
+                <button class="mobile-version-image-button" onclick="showDosa()">THE DOSA SPOT</button>
+                <div id="show-kitchens-dosa" class="mobile-version-individual-kitchens">
+                    <p>The Dosa Spot er mad fra det Sri Lankanske køkken lavet efter autentiske opskrifter og tilpasset
+                        til din smag. Se menukortet samt info om allegerne og find din favorit!</p>
+                    <div class="mobile-social-media-icons">
+                        <a href="https://www.facebook.com/thedosaspot" target="blank"><i
+                                class="fab fa-facebook fa-4x"></i></a>
+                        <a href="https://www.instagram.com/thedosaspot/" target="blank"><i
+                                class="fab fa-instagram fa-4x"></i></a>
+                    </div>
+                    <h2>MENUKORT</h2>
+                    <p>Masala Dosa - <a class="text-yellow-highlighted">75</a> kr</p>
+                    <p>Chicken Dosa - <a class="text-yellow-highlighted">70</a> kr</p>
+                    <p>Veggie Dosa - <a class="text-yellow-highlighted">75</a> kr</p>
+                    <p>Beef Spinach Dosa - <a class="text-yellow-highlighted">85</a> kr</p>
+                    <div class="mobile-version-allergies">
+                        <h2>ALLERGENER</h2>
+                        <div class="flexbox">
+                            <div class="mobile-version-allergies-box">
+                                <div class="flexbox">
+                                    <i class="fas fa-minus"></i>
+                                    <p>Produktet er glutenfri</p>
+                                </div>
+                                <div class="flexbox">
+                                    <i class="fas fa-minus"></i>
+                                    <p>Produktet er laktosefri</p>
+                                </div>
+                                <div class="flexbox">
+                                    <i class="fas fa-check"></i>
+                                    <p>Produktet er vegansk</p>
+                                </div>
+                            </div>
+                            <div class="mobile-version-allergies-box">
+                                <div class="flexbox">
+                                    <i class="fas fa-minus"></i>
+                                    <p>Produktet er sukkerfri</p>
+                                </div>
+                                <div class="flexbox">
+                                    <i class="fas fa-check"></i>
+                                    <p>Produktet er vegetarisk</p>
+                                </div>
+                                <div class="flexbox">
+                                    <i class="fas fa-minus"></i>
+                                    <p>Produktet er fri for fisk <br>og skaldyr</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>BØRNEVENLIGT?</h3>
+                        <p>JA</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
 
         <div id="duck-it" class="container-type-2">
             <div class="container-type-2-information">
                 <h2 class="headline-section">DUCK IT</h2>
-                <p>Duck It er confiteret and på en ny måde! Prøv det i en burger, som kroketter eller ovenpå pommes frites - se det er lækkert! Se menukortet samt info om allegerne og find din favorit!</p>
+                <p>Duck It er confiteret and på en ny måde! Prøv det i en burger, som kroketter eller ovenpå pommes
+                    frites - se det er lækkert! Se menukortet samt info om allegerne og find din favorit!</p>
                 <a href="/kitchens/duckit.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-2-image background-image-kitchens-2">
             </div>
+            <button class="mobile-version-image-button">DUCK IT</button>
         </div>
 
         <div id="fish-project" class="container-type-1">
             <div class="container-type-1-information">
                 <h2 class="headline-section">THE FISH PROJECT</h2>
-                <p>The Fish Project er fish and chips som de laver det i Londons gader, hvor det serveres i avispapir med en skøn tartarsauce til. Se menukortet samt info om allegerne og find din favorit!
+                <p>The Fish Project er fish and chips som de laver det i Londons gader, hvor det serveres i
+                    avispapir
+                    med en skøn tartarsauce til. Se menukortet samt info om allegerne og find din favorit!
                 </p>
                 <a href="/kitchens/thefishproject.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-1-image background-image-kitchens-3">
             </div>
+            <button class="mobile-version-image-button">THE FISH PROJECT</button>
         </div>
 
         <div id="hope-organic" class="container-type-2">
             <div class="container-type-2-information">
                 <h2 class="headline-section">HOPE ORGANIC</h2>
-                <p>Hope Organic er fantastisk velsmagende vegansk mad, som er elsket af alle. Et sted der helt bestemt skal prøves! Se menukortet samt info om allegerne og find din favorit!</p>
+                <p>Hope Organic er fantastisk velsmagende vegansk mad, som er elsket af alle. Et sted der helt
+                    bestemt
+                    skal prøves! Se menukortet samt info om allegerne og find din favorit!</p>
                 <a href="/kitchens/hopeorganic.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-2-image background-image-kitchens-4">
             </div>
+            <button class="mobile-version-image-button">HOPE ORGANIC</button>
         </div>
 
         <div id="marrakech" class="container-type-1">
             <div class="container-type-1-information">
                 <h2 class="headline-section">MARRAKECH</h2>
-                <p>Marrakech er krydret og autentisk mad som de ellers kun laver det i Marokko. En sand smagsoplevelse for alle der prøver det! Se menukortet samt info om allegerne og find din favorit!</p>
+                <p>Marrakech er krydret og autentisk mad som de ellers kun laver det i Marokko. En sand
+                    smagsoplevelse
+                    for alle der prøver det! Se menukortet samt info om allegerne og find din favorit!</p>
                 <a href="/kitchens/marrakech.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-1-image background-image-kitchens-5">
             </div>
+            <button class="mobile-version-image-button">MARRAKECH</button>
         </div>
 
         <div id="conefusion" class="container-type-2">
             <div class="container-type-2-information">
                 <h2 class="headline-section">CONEFUSION</h2>
-                <p>Conefusion tager mad i kræmmerhuse til nye højder og samler mad fra alle verdenshjørner. Her er der noget for alle! Se menukortet samt info om allegerne og find din favorit!</p>
+                <p>Conefusion tager mad i kræmmerhuse til nye højder og samler mad fra alle verdenshjørner. Her er
+                    der
+                    noget for alle! Se menukortet samt info om allegerne og find din favorit!</p>
                 <a href="/kitchens/conefusion.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-2-image background-image-kitchens-6">
             </div>
+            <button class="mobile-version-image-button">CONEFUSION</button>
         </div>
 
         <div id="pizzaria-de-amicis" class="container-type-1">
             <div class="container-type-1-information">
                 <h2 class="headline-section">PIZZARIA DE AMICIS</h2>
-                <p>Pizzaria De Amicis er italienske pizzaer i verdensklasse! Allerede ved første bid er man henført til Roms fantastiske gader! Se menukortet samt info om allegerne og find din favorit!</p>
+                <p>Pizzaria De Amicis er italienske pizzaer i verdensklasse! Allerede ved første bid er man henført
+                    til
+                    Roms fantastiske gader! Se menukortet samt info om allegerne og find din favorit!</p>
                 <a href="/kitchens/pizzariadeamicis.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-1-image background-image-kitchens-7">
             </div>
+            <button class="mobile-version-image-button">PIZZARIA DE AMICIS</button>
         </div>
 
         <div id="dim-sum" class="container-type-2">
             <div class="container-type-2-information">
                 <h2 class="headline-section">DIM SUM</h2>
-                <p>Har du nogensinde drømt om at smage baos, dumplings eller friske forårsruller, så har du nu muligheden hos Dim Sum! Se menukortet samt info om allegener og find din favorit!</p>
+                <p>Har du nogensinde drømt om at smage baos, dumplings eller friske forårsruller, så har du nu
+                    muligheden hos Dim Sum! Se menukortet samt info om allegener og find din favorit!</p>
                 <a href="/kitchens/dimsum.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-2-image background-image-kitchens-8">
             </div>
+            <button class="mobile-version-image-button">DIM SUM</button>
         </div>
 
         <div id="burgers-shakes" class="container-type-1">
             <div class="container-type-1-information">
                 <h2 class="headline-section">BURGERS & SHAKES</h2>
-                <p>Hos Burger & Shakes sætter de en stolthed i at repræsentere det amerikanske køkken og levere knaldgode burgere og sakes! Se menukortet samt info om allegener og find din favorit!</p>
+                <p>Hos Burger & Shakes sætter de en stolthed i at repræsentere det amerikanske køkken og levere
+                    knaldgode burgere og sakes! Se menukortet samt info om allegener og find din favorit!</p>
                 <a href="/kitchens/burgersandshakes.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-1-image background-image-kitchens-9">
             </div>
+            <button class="mobile-version-image-button">BURGERS & SHAKES</button>
         </div>
 
         <div id="street-sushi" class="container-type-2">
             <div class="container-type-2-information">
                 <h2 class="headline-section">STREET SUSHI</h2>
-                <p>Street Sushi laver spændende og velsmagende sushi, hvor der konstant eksperimenteres med nye smagskombinationer! Se menukortet samt info om allegener og find din favorit!</p>
+                <p>Street Sushi laver spændende og velsmagende sushi, hvor der konstant eksperimenteres med nye
+                    smagskombinationer! Se menukortet samt info om allegener og find din favorit!</p>
                 <a href="/kitchens/streetsushi.html"><button>SE KØKKEN</button></a>
             </div>
             <div class="container-type-2-image background-image-kitchens-10">
             </div>
-        </div>
-
+            <div>
+                <button class="mobile-version-image-button">STREET SUSHI</button>
+            </div>
     </main>
 
     <footer>
@@ -211,8 +306,10 @@
             </div>
         </div>
         <div class="footer-social-medias">
-            <a href="https://www.facebook.com/aalborgstreetfoodmarkedmarket" target="blank"><i class="fab fa-facebook fa-4x"></i></a>
-            <a href="https://www.instagram.com/aalborgstreetfood/?hl=da" target="blank"><i class="fab fa-instagram fa-4x"></i></a>
+            <a href="https://www.facebook.com/aalborgstreetfoodmarkedmarket" target="blank"><i
+                    class="fab fa-facebook fa-4x"></i></a>
+            <a href="https://www.instagram.com/aalborgstreetfood/?hl=da" target="blank"><i
+                    class="fab fa-instagram fa-4x"></i></a>
         </div>
         <div class="footer-copyright">
             <p>2020 <i class="far fa-copyright"></i> Copyright. Aalborg Street Food Køkkenfabrikken</p>

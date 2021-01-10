@@ -34,6 +34,22 @@
                         class="flag flag-denmark"></a>
             </div>
         </nav>
+
+        <div class="mobile-navigation-top">
+            <a href="javascript:void(0);" class="mobile-burgermenu" onclick="burgerMenu()">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+            <a href="index.html"><img src="./assets/images/logosmall.png" alt="Aalborg Streetfood Køkkenfabrikken logo"
+                    class="logo"></a>
+            <a href="index.html"><img src="./assets/images/denmark.png" alt="Det Danske flag"
+                    class="flag flag-denmark"></a>
+            <div id="mobile-links">
+                <a href="kitchens.html">KØKKENER</a>
+                <a href="activities.html">AKTIVITETER</a>
+                <a href="events.html">BEGIVENHEDER</a>
+                <a href="aboutus.html">OM OS</a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -73,14 +89,17 @@
                 <p>booking@aalborg-streetfood.dk</p>
             </div>
             <div class="speech-bubble-about-1">
-                <p>Står du med hvad der skal være vores næste køkken i Aalborg Streetfood Køkkenfabrikken, så hold dig ikke tilbage, men kontakt os straks! Vi er altid åbne for nye inputs og spændende smagsoplevelser.</p>
-                    <a href="mailto:event@aalborg-streetfood.dk"><button>SEND OS EN MAIL</button></a>
+                <p>Står du med hvad der skal være vores næste køkken i Aalborg Streetfood Køkkenfabrikken, så hold dig
+                    ikke tilbage, men kontakt os straks! Vi er altid åbne for nye inputs og spændende smagsoplevelser.
+                </p>
+                <a href="mailto:event@aalborg-streetfood.dk"><button>SEND OS EN MAIL</button></a>
             </div>
-    
+
             <div class="speech-bubble-about-2">
                 <p>PSSST! <br>
-                    Du kan også afholde dit eget arrangement på Aalborg Streetfood Køkkenfabrikken. Vi afholder arrange-menter for både private og erhverv.</p>
-                    <a href="mailto:event@aalborg-streetfood.dk"><button>SEND OS EN MAIL</button></a>
+                    Du kan også afholde dit eget arrangement på Aalborg Streetfood Køkkenfabrikken. Vi afholder
+                    arrange-menter for både private og erhverv.</p>
+                <a href="mailto:event@aalborg-streetfood.dk"><button>SEND OS EN MAIL</button></a>
             </div>
         </div>
 
@@ -115,17 +134,20 @@
             <h2 id="event-squaredays">HOLDET BAG</h2>
             <div class="flexbox">
                 <div class="about-team-staff-info">
-                    <img src="assets/images/profiles.jpg.png" alt="Billede af placeholder indtil de rigtige billeder kommer">
+                    <img src="assets/images/profiles.jpg.png"
+                        alt="Billede af placeholder indtil de rigtige billeder kommer">
                     <h3>Tony</h3>
                     <p>Direktør</p>
                 </div>
                 <div class="about-team-staff-info move-left">
-                    <img src="assets/images/profiles.jpg.png" alt="Billede af placeholder indtil de rigtige billeder kommer">
+                    <img src="assets/images/profiles.jpg.png"
+                        alt="Billede af placeholder indtil de rigtige billeder kommer">
                     <h3>Irene</h3>
                     <p>Administration</p>
                 </div>
                 <div class="about-team-staff-info move-left">
-                    <img src="assets/images/profiles.jpg.png" alt="Billede af placeholder indtil de rigtige billeder kommer">
+                    <img src="assets/images/profiles.jpg.png"
+                        alt="Billede af placeholder indtil de rigtige billeder kommer">
                     <h3>Mikkel</h3>
                     <p>Markedsføring</p>
                 </div>
@@ -147,6 +169,65 @@
         </div>
 
     </main>
+
+    <div class="mobile-version-main">
+        <div>
+            <button class="big-button" onclick="showMission()">MISSION & VISION</button>
+            <div class="mobile-version-mission-vision" id="show-about-mission-vision">
+                <h2>MISSION & VISION</h2>
+                <p>Aalborg Streetfood Køkkenfabrikken er et samlingspunkt for fantastisk mad og mindeværdige oplevelser
+                    der
+                    drives af mennesker med passion for at skabe et helt særligt rum for dig. Vores mission er at give
+                    hver
+                    eneste besøgende en oplevelse fra de træder ind på Aalborg Streetfood til at de er på vej hjem igen
+                    med
+                    smil på læben.
+                    Dette gøres ved, at vi nøje udvælger de køkkener der fylder vores største hal med dufte fra alle
+                    verdenshjørner. Vi forsøger herudover konstant at fornye og forbedre os med vores aktiviteter og
+                    arrangementer!
+                    Vores vision er at blive førstevalg for potentielle kunder om de skal have stillet sulten eller have
+                    en
+                    på opleveren!</p>
+            </div>
+        </div>
+
+        <div>
+            <button class="big-button" onclick="showStaff()">HOLDET BAG</button>
+            <div class="mobile-version-show-staff" id="show-about-staff">
+                <h2>HOLDET BAG</h2>
+                <img src="/assets/images/profiles.jpg.png" alt="">
+                <p>Tony</p>
+                <p>Direktør</p>
+                <img src="/assets/images/profiles.jpg.png" alt="">
+                <p>Irene</p>
+                <p>Administration</p>
+                <img src="/assets/images/profiles.jpg.png" alt="">
+                <p>Mikkel</p>
+                <p>Markedsføring</p>
+                
+            </div>
+        </div>
+
+        <div>
+            <button class="big-button" onclick="showHistory()">HISTORIEN</button>
+            <div class="mobile-version-mission-vision" id="show-about-history">
+                <h2>HISTORIEN</h2>
+                <p>Aalborg Streetfood Køkkenfabrikken åbnede i maj 2020 og er placeret på Skudehavnen i historiske Aalborg Vestby. Køkkenfabrikken består af flere store haller som alle er med til at skabe den helt unikke stemning, som man oplever, når man træder ind på stedet. Hallerne blev tidligere brugt som produktionslokaler til køkkeninventar, og køkkeninventar er der også masser af i dag i vores i alt 18 køkkener. 
+                    Stedet gik fra produktionslokaler til Aalborg Street Food The Lighthouse, men har i dag skiftet koncept og fokuserer nu også på oplevelser og arrangementer under navnet Aalborg Streetfood Køkkenfabrikken. Vi ser frem til at skrive videre på denne fede historie!</p>
+            </div>
+        </div>
+
+        <div class="mobile-version-orange-container">
+            <h2>VIDSTE DU AT…</h2>
+            <p>Står du med den næste madbod til Aalborg Streetfood Køkkenfabrikken, så hold dig ikke tilbage men kontakt
+                os straks! Vi er altid åbne for nye inputs og spændende smagsoplevelser.
+            </p>
+            <a href="mailto:event@aalborg-streetfood.dk"><button>SEND OS EN MAIL</button></a>
+            <p>Du kan afholde private arrangementer, som fx bryllup, konfirmation, teambuilding osv. hos os?
+            </p>
+            <a href="mailto:event@aalborg-streetfood.dk"><button>SEND OS EN MAIL</button></a>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-grid-container">
