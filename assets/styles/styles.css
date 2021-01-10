@@ -1530,3 +1530,66 @@ iframe {
         text-align: center;
     }
 }
+
+svg {
+    width: 8vw;
+}
+
+#Moving-lid {
+    animation: Moving-lid 0.8s infinite linear alternate;
+    transform-origin: center;
+}
+
+@keyframes Moving-lid {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(12deg);
+    }
+
+}
+
+#Aalborg {
+    animation: Aalborg 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes Aalborg {
+    from {
+        transform: rotateX(-20deg);
+    }
+
+    to {
+        transform: rotateX(10deg);
+    }
+}
+
+#Streetfood {
+    animation: Streetfood 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes Streetfood {
+    from {
+        transform: rotateX(-15deg);
+    }
+
+    to {
+        transform: rotateX(20deg);
+    }
+}
+
+#Gryde {
+    animation: Gryde 0.2s ease-in-out infinite alternate;
+}
+
+@keyframes Gryde {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(0.5%);
+    }
+}
+
